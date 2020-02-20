@@ -1,0 +1,22 @@
+{
+  "name": "fossunited",
+  "version": "0.0.1",
+  "description": "Website for FOSS United",
+  "main": "index.js",
+  "repository": "git@github.com:scmmishra/fossunited.git",
+  "author": "Shivam Mishra <scm.mymail@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "npx postcss assets/css/style.css -o assets/css/united.css",
+    "watch": "watch 'npm run build:css' ./"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "cssnano": "^4.1.10",
+    "tailwindcss": "^1.2.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "postcss": "^7.0.27"
+  }
+}
